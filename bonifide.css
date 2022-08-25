@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin-top:20px;
+    margin-left: 530px;
+    text-align: center;
+    width: 560px;
+    height:805px;
+    border: 3px solid rgb(0, 0, 0);
+}
+img{
+    width: 100px;
+    float: left;
+}
+.text-center{
+   
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 10px;
+}
+.ap{
+font-size: x-large;
+padding-top: 20px;
+}
+hr{
+    width: 550px;
+    margin-right:100px;
+}
+.table{
+   border: 2px solid black;
+   width: 560px;
+   position:relative;
+   left: -15px;
+   padding: 0px;
+}
+
+.date{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.apc{
+    float: left;
+}
+.dat{
+    float: right;
+}
+.bonafide{
+    position: absolute;
+    border: 2px solid black;
+    top: 290px;
+    left: 630px;
+    width: 350px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.para{
+    margin-top: 140px;
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 17px;
+
+}
+fieldset{
+    border: 2px solid black;
+    text-align: center;
+    width: 120px;
+    height: 150px;
+    padding-top: 120px;
+    margin-left: 200px;
+}
+.clerk{
+    position: absolute;
+    top: 720px;
+    left: 600px;
+}
+.principal{
+    position: absolute;
+    top: 720px;
+    left: 950px;
+}
+.footer{
+    border: 2px solid black;
+   width: 560px;
+   position:relative;
+   left: -15px;
+   margin-bottom: 0px;
+   margin-top: 10px;
+   border-bottom: none;
+
+}
