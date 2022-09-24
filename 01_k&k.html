@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto Serif:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+            .mp{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 07px;
+                }
+            body {
+                font-family: 'Noto Serif', cursive;
+                font-size: 18px;
+                
+            }
+            a{
+                font-size:15px;
+                font-weight: 700;
+                text-decoration:none;
+                color: black;
+                font-family: 'Noto Serif', cursive;
+            }
+            .heder{
+               
+                font-family:serif, cursive;
+                background-color: black;
+                color: aliceblue;
+            
+            }
+            /* .nav-item:hover{
+                font-size: larger;
+                text-decoration:underline;
+
+            } */
+            .nav-item{
+                font-size: 18px;
+                text-transform: uppercase;
+                
+            }
+            .drop{
+                font-size: 8px;
+                font-family: none;
+            }
+            .menu{
+                padding-top: 10px;
+                color: aqua;
+            }
+            /* .affiliation{
+                padding: 40px;
+                height: 450px;
+
+            } */
+            .video{
+                padding:50px;
+            }
+            .list{
+                list-style-type:none;
+                font-size: 18px;
+            }
+            .para, p{
+                text-align: justify;
+                font-family: 'Noto Serif', cursive;
+            }
+            
+            .info{
+                border: solid black;
+                text-align: justify;
+                text-indent: 20px;
+                border-radius: 20px;
+                height: auto;
+                font-size:18px;
+                font-family: 'Noto Serif', cursive;
+                background-color: rgb(226, 222, 238);
+            }
+            .vision{
+                border: solid black;
+                border-radius: 20px;
+                font-family: 'Noto Serif', cursive;
+                background-color: rgb(14, 1, 60);
+                color: aliceblue;
+                
+        
+        
+             }
+            .ainfo{
+                border: solid black;
+                text-align: justify;
+                width: auto;
+                height: auto;
+                overflow: hidden;
+                border-radius: 20px;
+                font-family: 'Noto Serif', cursive;
+                background-color: rgb(226, 222, 238);
+
+            }
+            
+            .mar{
+                margin-top: 90px;
+                /* border: 1px solid black; */
+                height: 50%;
+                /* box-shadow:2px 2px 16px gray inset; */
+                font-family:'Times New Roman', Times, serif;
+            }
+            .act-text{
+                text-indent: 80px;
+            }
+            .iframe-container{
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+                height: 0;
+            }
+            .iframe-container iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .img{
+                border-radius: 10px;
+                padding: 5px;
+            }
+            .car-round{
+                border-radius: 90px;
+            }
+            iframe{
+                border-radius: 30px;
+            }
+            .div2{
+                
+                width: auto;
+            }
+            body{
+                background-color: white;
+            }
+            
+            .gall {
+  background-color: #3bb2b8;
+  background: linear-gradient(
+    25deg,
+    rgba(66, 230, 149, 1),
+    rgba(66, 32, 149, 1)
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.gall {
+  max-width:auto;
+  height: max-content;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div {
+    margin-bottom: 10px;
+  }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.lightbox img {
+  display: block;
+  margin: auto;
+}
+
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+.footc{
+    background-color: none;
+    width: 100%;
+}
+.affc{
+    background-image: url('/bulding.jpg');
+    /* background-position: center top; */
+    background-size: cover;
+    color: rgb(235, 233, 237);
+    opacity: 0.9;
+    background-position: right top;
+    
+}
+.vidc{
+    background-image: url('/vid.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+
+}
+.addc{
+   background-image: url('/map.jpg');
+   opacity: 0.9;
+   color: white;
+}
+
+.actic
+{
+    background-image:url('/sea.jpg');
+    background-repeat: no-repeat;
+    background-size:initial;
+    background-position: center center;
+    opacity: 0.9;
+    font-weight: bolder;
+}
+.sec1{
+    background-color: #8141d4;
+}
+
+
+
+
+
+
+
+
+            
+    </style>
+</head>
+<body>
+   <section class="sec1 m-0 p-0">
+     <!-- header section -->
+   <div class="heder">
+    <div class="heder container-fluid fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow" >
+            <div class="container-fluid ">
+                 <a href="#" class="navbar-brand" ><img src="kayaking.png" alt=""style="background-color:aqua;" class="float-start img pt-2" width="50px"><h5 class="a float-start float-sm-start p-2">Canoeing & Kayaking</h5></a>
+                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse4">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <!-- menu bar -->
+                 <div class="collapse navbar-collapse justify-content-end float-end" id="navbarCollapse4">
+                     <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About Us</a>
+                        <div class="nav-item dropdown"  >
+                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 18px;">Disciplines</a>
+                           <div class="dropdown-menu">
+                               <a href="#" class="dropdown-item">Kayaking</a>
+                               <a href="#" class="dropdown-item">Canoeing</a>
+                               <a href="#" class="dropdown-item">Rowing</a>
+                               <a href="#" class="dropdown-item">Dragon Boat</a>
+                               <a href="#" class="dropdown-item">Canoe Polo</a>
+                           </div>
+                       </div>
+                        <a href="#" class="nav-item nav-link">Events</a>
+                        <a href="#" class="nav-item nav-link">Gallery</a>
+                        <a href="#" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+   </div>
+   <div class="container-fluid mar fs-1 fw-bold">
+    <marquee behavior="scroll" direction="left" scrollamount="10" loop>New Canoeing  & Kayaking Sports & Multipurpose Association, Buldana</marquee>
+   </div>
+   <div class="container text-center p-0">
+    <h2 class="fs-1 text-uppercase pt-2 fst-italic"> Welcome To Canoeing & Kayaking</h2>
+    <h3></h3>
+   </div>
+   <!-- carousel images sliding part -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="vision border-1 shadow text-center mt-3 m-2  p-md-4">
+                        VISION :
+                    </div>
+                    <div class="info border-1 shadow mt-3 m-2  p-3">
+                        To create a Canoeing & Kayaking community that issupportive, progressive, friendly,competitive and encouraging. To ensure that olampics, no matter  what their age or background, will have an opportunity to reach their potential.
+                    </div>
+
+                    <div class="vision border-1 shadow text-center mt-3 m-2 p-md-4">
+                        MISSION:  
+                    </div>
+                    <div class="info border-1 shadow m-2  p-3">
+                        To promote participation in Canoeing & Kayaking as a sport for life and encourage the growth of Canoeing & Kayaking olampics, coaches and officials throughout MBA The mission of BSAB is to promote camaraderie, friendship and development of fitness and health a peaceful and positive quality of life through Canoeing & Kayaking as sport.
+                </div>
+            </div>
+            <div class="col-md-8  my-3  menu  h-25">
+                <div id="rsk" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#rsk" class="active" data-bs-slide-to="0"></li>
+                        <li data-bs-target="#rsk" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#rsk" data-bs-slide-to="2"></li>
+                        
+                    </ol>
+                    <!-- wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active shadow"> 
+                            <img src="p-01.jpg" class="d-block  car-round w-100" alt="slide1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h4>
+                                    first slide label
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quas dolorum repellendus odio aperiam consequuntur blanditiis unde tempora velit!</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="p-02.jpg" class="d-block  car-round w-100"  alt="slide2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h4>
+                                    first slide label
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quas dolorum repellendus odio aperiam consequuntur blanditiis unde tempora velit!</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" >
+                            <img src="p-03.jpg" class="d-block  car-round w-100" alt="slide3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h4>
+                                    first slide label
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quas dolorum repellendus odio aperiam consequuntur blanditiis unde tempora velit!</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" >
+                            <img src="p-04.jpg" class="d-block  car-round w-100" alt="slide3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h4>
+                                    first slide label
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quas dolorum repellendus odio aperiam consequuntur blanditiis unde tempora velit!</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" >
+                            <img src="p-05.jpg" class="d-block car-round  w-100" alt="slide3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h4>
+                                    first slide label
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quas dolorum repellendus odio aperiam consequuntur blanditiis unde tempora velit!</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel control -->
+                    <a class="carousel-control-prev" href="#rsk" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#rsk" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div> 
+            <!-- figure side part text -->
+            <div class="col-md-2 para">
+                <div class="vision border-1 shadow text-center mt-3 m-2 p-md-4">
+                    ABOUT  
+                </div> 
+                <div class=" ainfo shadow border-1 mt-3 m-2 p-3"  >
+                <p>New Canoeing & Kayaking Sports & Multipurpose Association, Buldana
+                     Canoeing is an activity which involves paddling a canoe with a single-bladed paddle. Common meanings of the term are limited to when the canoeing is the central purpose of the activity. Broader meanings include when it is combined with other activities such as canoe camping, or where canoeing is merely a transportation method used to accomplish other activities. Most present-day canoeing is done as or as a part of a sport or recreational activity. In some parts of Europe canoeing refers to both canoeing and kayaking, with a canoe being called an open canoe.</p> 
+                </div> 
+            </div>
+            </div> 
+        </div> 
+        </div>
+        <hr>
+        <!-- 
+            -----------------------------Affiliation & Recognized part----------------------------------------
+         -->
+        
+        
+    </div>
+    
+   </div>
+</div>
+   </section>
+<div class="container-fluid mt-5 affc">
+    <div class="container ">
+        <h2 class="text-center pt-5 w-100 h-100 fw-bolder"><span class=" mp">Affiliation & Recognized </span></h2>
+    </div>
+    <div class="row affiliation ">
+    <div class="col-md-6 pt-2">
+        <h2 class="text-center">Affiliation:</h2>
+        <div class="center pt-1">
+                <div class="text-center mb-5 list">
+                    <li>Maharashtra Association for Canoeing & Kayaking</li>
+                    <li>Maharashtra Olympic Association</li>
+                    <li>Government of Maharashtra Ministry of youth Affairs & Sports</li>
+                
+                </div>
+        </div>
+    </div>
+    <div class="col-md-6 pt-2">
+        <h2 class="text-center">Recognized:</h2>
+        <p>
+        
+            <div class="text-center pt-1 list">
+               
+                    <li>Indian Canoeing & Kayaking Association</li>
+                    <li>Indian Olympic Association</li>
+                    <li>Ministry of Youth Affairs & Sports Department Government of India</li>
+                
+            </div>
+        </p>
+    </div>
+    </div>
+</div>
+<div class="container-fluid mt-5 vidc">
+    <div class="container videoc">
+        <h2 class="text-center pt-5 w-100 h-100 fw-bolder"><span class=" mp">Video </span></h2>
+    </div>
+    <div class="col-md-12 video p-5">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <div class="iframe-container">
+                        <iframe width="560" height="315" class="shadow p-1" src="https://www.youtube.com/embed/wzvdmV5sC84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <div class="iframe-container">
+                        <iframe width="560" height="315" class="shadow p-1"  src="https://www.youtube.com/embed/wzvdmV5sC84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3 ">
+                    <div class="iframe-container iframe">
+                        <iframe width="560" height="315" class="shadow mb-5 p-1" src="https://www.youtube.com/embed/wzvdmV5sC84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5 gall">
+    <div class="container">
+        
+        <h2 class="text-center pt-5 w-100 h-100 fw-bolder"><span class=" mp">Gallery</span></h2>
+        <div class="lightbox-gallery mb-5">
+                <div><img src="/img/p-01.jpg"  alt="img1"></div>
+                <div><img src="/img/p-02.jpg"  alt="img2"></div>
+                <div><img src="/img/p-03.jpg"  alt="img3"></div>
+                <div><img src="/img/p-04.jpg"  alt="img4"></div>
+                <div><img src="/img/p-05.jpg"  alt="img5"></div>
+                <div><img src="/img/p-01.jpg"  alt="img1"></div>
+                <div><img src="/img/p-02.jpg"  alt="img2"></div>
+                <div><img src="/img/p-03.jpg"  alt="img3"></div>
+                <div><img src="/img/p-04.jpg"  alt="img4"></div>
+                <div><img src="/img/p-05.jpg"  alt="img5"></div>
+                <div><img src="/img/p-01.jpg"  alt="img1"></div>
+                <div><img src="/img/p-02.jpg"  alt="img2"></div>
+                <div><img src="/img/p-03.jpg"  alt="img3"></div>
+                <div><img src="/img/p-04.jpg"  alt="img4"></div>
+                <div><img src="/img/p-05.jpg"  alt="img5"></div>
+                <div><img src="/img/p-03.jpg"  alt="img3"></div>
+                <div><img src="/img/p-04.jpg"  alt="img4"></div>
+                <div><img src="/img/p-05.jpg"  alt="img5"></div>
+                
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5 bg-primary">
+
+    <div class="container-fluid pt-5 ">
+        <h2 class="text-center pt-5 w-100 h-100 fw-bolder"><span class=" mp">Events</span></h2>
+    </div>
+    <div class="card-title text-center pt-3"><h2>ALL TOURNAMENTS</h2></div>
+    <div class="container p-5">
+    <div class="row align-item-center text-center">
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2  p-2">
+            <div class="card shadow border-primary">
+                <img  src="p-03.jpg" class="card-img-top rounded p-3"  alt="bwf">
+                <div class="card-body">
+                    <p class="card-title text-center fw-bolder">Taluka Events:
+                    </p>
+                    <p class="card-text text-center fw-light">22-28 September</p>
+                    <div class="card-footer bg-primary">
+                        <small><a class="text-center fs-6  text-dark fw-bolder"  href="#">Visit Us</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>   
+     </div> 
+</div>
+</div>
+
+<div class="container-fluid actic mt-5" >
+    <div class="container">
+        <h2 class="text-center w-100 mt-4 text-dark fw-bolder text-decoration-underline pt-5 fs-1" style="width:200px ;"><span class="  mp">Activities </span></h2>
+    </div>
+        <div class="container ">
+        <p class="act-text fs-4">We have something for everyone when iimg-thumbnailmes to waports. Whether you’re a beginner or an experienced kayaker, rower, slalom-er, dragon boater, or canoeist, we’ve got you covered. We offer world-class instruction in all the following disciplines:</p>
+        <div class="row ">
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-01.jpg" alt="Responsive img" class="img-thumbnail card-img-top" width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="text-center card-title">Kayaking</h2>
+                <p class="card-text">Kayaking is a great way to stay active and have fun. Our beginners’ classes are perfect for those who want to learn the basics of paddling and navigation. Our more advanced classes will teach you how to train for competitions and perform advanced maneuvers in difficult conditions, including rapids and whitewater.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-02.jpg" alt="Responsive img" class="img-thumbnail card-img-top" width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="text-center card-title">Canoeing</h2>
+                <p class="card-text">is a great way to explore the outdoors and stay fit. Here we teach you flat water canoeing, white water canoeing, and marathon canoeing. You’ll also learn about safety procedures and how to handle your canoe in difficult conditions. Our advanced classes are perfect for those looking to compete in canoeing competitions.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-03.jpg" alt="Responsive img" class="img-thumbnail card-img-top" width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="text-center card-title">Rowing</h2>
+                <p class="card-text"> Rowing is a great way to stay fit and improve your cardiovascular health. Our classes are perfect for beginners of all ages and experience levels. In our advanced classes, you’ll learn how to row in a team, compete in regattas, and handle your boat in difficult conditions.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-04.jpg" alt="Responsive img" class="img-thumbnail card-img-top" width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="text-center card-title">Dragon Boating</h2>
+                <p class="card-text">Dragon Boating is a team sport that is enjoyed by people of all ages. In our classes, you’ll learn the basics of this exciting discipline, including how to paddle as a team, navigate your boat, perform synchronized moves and do the dragon dance. You’ll also learn about safety procedures and how to handle your boat in difficult conditions. Our expert instructors will help you reach your full potential and compete at the national and international level.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-08.jpg" alt="Responsive img" class="img-thumbnail card-img-top" width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="text-center card-title">Canoe Polo</h2>
+                <p class="card-text">Canoe Polo is a fast-paced and exciting water sport that can be enjoyed by people of all ages. In our classes, you’ll learn the basics of canoe polo, including how to paddle as a team, navigate your boat, and score goals.  Our expert instructors will help you reach your full potential and compete at the national and international level.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="card border-dark">
+                    <img src="p-09.jpg" alt="img-thumbnail" class="img-thumbnail card-img-top"  width="100%" height="60%" >
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title text-center">Lorem ipsum.</h2>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore maiores aspernatur quia, dolores fugiat corporis esse inventore odit minima est pariatur praesentium harum repudiandae blanditiis dignissimos accusantium veritatis eveniet laborum illo accusamus quod et corrupti magni! Earum inventore praesentium quia, nesciunt saepe odio quod nobis vitae omnis necessitatibus voluptas velit.</p>
+                <!-- <a href="#" class="btn btn-primary float-end">Read Artical</a> -->
+                <p class="float-end text-primary"> read artical ></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+<div class="container-fluid mt-5 addc ">
+                
+    <div class="container">
+        <h2 class="text-center w-100 pt-5 " style="width:200px ;"><span class= "mp">Address</span></h2>
+    </div>
+    <div class="row mt-3 m-5">
+        <div class="col-md-6 p-lg-5">
+          
+            <p class="heading2 text-uppercase  fs-4 fw-bold mt-1">Canoeing & Kayaking sport Association Buldhana</p>
+            <!-- address part -->
+           <div class="p-2">
+            <span><i class="bi bi-geo-alt-fill"></i></span>
+           <span class="address  m-md-4 lh-lg">C/O Baburao Rambhau Deshmukh, <br> <span class=" m-md-5"> Pratibha Building,</span> <br><span class=" m-md-5"> Krida Sankul Road, Wanere Layout, Buldana</span></span>
+           </div>
+           <!-- contact number -->
+           <div class="p-2">
+                <span class="col-md-1"><i class="bi-telephone-fill"></i></span>
+                <span class="col-md-5  m-md-4 lh-lg">+91 9922712066</span>
+             </div>
+             <!-- contact number -->
+             <div class="p-2">
+                <span class="col-md-1"><i class="bi-telephone-fill"></i></span>
+                <span class="col-md-5  m-md-4 lh-lg ">+91 7020567295</span>  
+            </div>
+            <!-- email address -->
+            <div class="p-2">
+                <span><i class="bi-envelope-fill"></i></span>
+                <span class=" m-md-4 lh-lg">swatixtechnologies@gmail.com</span>
+             </div>
+        </div>
+        <!-- map location -->
+        <div class="col-md-6 "><iframe class="mt-5 mb-2 w-100 p-lg-5"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7481.468902716304!2d76.238497!3d20.352586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8a6642524f020bd!2sSwatix%20Technologies!5e0!3m2!1sen!2sin!4v1661830203888!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+</div>
+<div class="container-fluid foot1">
+    <section class="footer footc">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">Canoing & Kayaking @2022
+            <br>
+            Develop & Designed by RSK
+        </p>
+
+    </section>
+</div>
+<script>
+    (function() {
+  var $lightbox = $("<div class='lightbox'></div>");
+  var $img = $("<img>");
+  var $caption = $("<p class='caption'></p>");
+
+  // Add image and caption to lightbox
+
+  $lightbox
+    .append($img)
+    .append($caption);
+
+  // Add lighbox to document
+
+  $('body').append($lightbox);
+
+  $('.lightbox-gallery img').click(function(e) {
+    e.preventDefault();
+
+    // Get image link and description
+    var src = $(this).attr("data-image-hd");
+    var cap = $(this).attr("alt");
+
+    // Add data to lighbox
+
+    $img.attr('src', src);
+    $caption.text(cap);
+
+    // Show lightbox
+
+    $lightbox.fadeIn('fast');
+
+    $lightbox.click(function() {
+      $lightbox.fadeOut('fast');
+    });
+  });
+
+}());
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
